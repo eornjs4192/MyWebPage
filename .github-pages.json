@@ -1,0 +1,16 @@
+{
+  "config": "hugo.toml,pages.json",
+  "theme": "template",
+  "sample": "exampleSite",
+  "version": "0.165.0",
+  "slug": "hugoplate",
+  "npm": [
+    ".",
+    "themes/template"
+  ],
+  "asset_build": [],
+  "generator": "3.1",
+  "repo": "https://github.com/eornjs4192/MyWebPage.git",
+  "baseURL": "https://eornjs4192.github.io/MyWebPage/",
+  "audited": false
+}
