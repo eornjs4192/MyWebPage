@@ -8,9 +8,13 @@ content: "초급프로젝트 수업에서 Git과 GitHub를 활용한 프로젝�
 image: "/images/banner.png"
 image\_alt: "책상에서 노트북으로 작업하는 사람의 일러스트"
 button:
-    enable: true
-    label: "GitHub 방문하기"
-    link: "https://github.com/eornjs4192"
+enable: true
+label: "GitHub 방문하기"
+link: "https://github.com/eornjs4192"
+
+
+
+\---
 
 # Features
 
