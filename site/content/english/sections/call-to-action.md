@@ -1,5 +1,5 @@
 ---
-enable: true
+enable: false
 title: "Ready to build your next project with Hugo?"
 image: "/images/call-to-action.png"
 image_alt: "Illustration of an astronaut floating among dashboard widgets"
