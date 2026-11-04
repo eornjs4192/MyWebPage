@@ -36,6 +36,10 @@ Vue 프로젝트를 저장소에 올리고 GitHub Actions를 이용해 배포하
 
 [두 번째 배포 사이트 열기](https://eornjs4192.github.io/movie-lab-second/)
 
+![GitHub Actions로 배포한 Vue 영화 프로젝트의 API 키 입력 초기 화면](/images/vue-actions.png)
+
+두 번째 배포 사이트의 초기 화면입니다. 영화 데이터 조회에는 별도의 TMDB API 키가 필요합니다.
+
 ## 현재 확인한 결과
 
 과제는 제출 완료 상태이며, 포트폴리오를 작성하면서 배포 사이트에 다시 접속해 보았습니다.
