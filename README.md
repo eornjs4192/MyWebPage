@@ -15,6 +15,11 @@
 | 소개 | site/content/english/about/_index.md |
 | 활동 기록 목록 | site/content/english/blog/_index.md |
 | 활동 글 | site/content/english/blog/post-1.md |
+| Vue 배포 실습 글 | site/content/english/blog/post-2.md |
+| 연락처 내용 | site/content/english/contact/_index.md |
+| 연락처 화면 구성 | site/layouts/contact.html |
+| 404 오류 안내 화면 | site/layouts/404.html |
+| 공통 문구 한국어 번역 | site/i18n/ko.yaml |
 | 메뉴 | site/config/_default/menus.ko.toml |
 | 로고와 사이트 설명 | site/config/_default/params.toml |
 | 언어 설정 | site/config/_default/languages.toml |
