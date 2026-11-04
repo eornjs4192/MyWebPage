@@ -1,3 +1,78 @@
+# 개인 포트폴리오 사이트
+
+전북대학교 컴퓨터인공지능학부 학생의 관심 분야와 학습 및 프로젝트 경험을 소개하는 초급프로젝트 과제입니다.
+
+- 활동명: eornjs4192
+- 사이트: https://eornjs4192.github.io/MyWebPage/
+- 저장소: https://github.com/eornjs4192/MyWebPage
+- 배포 브랜치: main
+
+## 주요 수정 위치
+
+| 내용 | 파일 |
+|---|---|
+| 홈 | site/content/english/_index.md |
+| 소개 | site/content/english/about/_index.md |
+| 활동 기록 목록 | site/content/english/blog/_index.md |
+| 활동 글 | site/content/english/blog/post-1.md |
+| 메뉴 | site/config/_default/menus.ko.toml |
+| 로고와 사이트 설명 | site/config/_default/params.toml |
+| 언어 설정 | site/config/_default/languages.toml |
+| 사이트 제목 | site/hugo.toml |
+| SNS 링크 | site/data/social.json |
+| 이미지 | site/assets/images/ |
+
+한국어 설정은 기존 content/english 폴더를 사용하도록 연결되어 있습니다.
+
+Markdown은 원문을 볼 수 있는 모드에서 편집하고, 구분선과 들여쓰기를 유지합니다. 저장 후 git diff로 변경 내용을 확인합니다.
+
+## 빌드 환경과 방법
+
+현재 GitHub Actions에 설정된 버전입니다.
+
+- Python 3.12
+- Node.js 24
+- Go 1.27.1
+- Hugo Extended 0.165.0
+- Dart Sass 1.105.0
+
+자동 배포에서는 저장소 최상위에서 다음 명령을 실행합니다.
+
+```bash
+python .github/pages_build.py --dependencies
+python .github/pages_build.py --build
+```
+
+빌드 결과는 최상위 public 폴더에 생성됩니다. Windows 로컬에서 같은 명령을 실행하려면 필요한 도구가 설치되어 있어야 하며, 로컬 실행은 아직 검증하지 않았습니다.
+
+## 배포 절차
+
+1. 파일 수정 후 git diff로 변경 내용을 확인합니다.
+2. 수정한 파일을 git add로 선택하고 커밋합니다.
+3. main 브랜치에 push합니다.
+4. GitHub Actions에서 해당 실행의 build와 deploy 성공 여부를 확인합니다.
+5. 공개 사이트에서 내용과 링크를 직접 확인합니다.
+
+배포 설정 파일은 .github/workflows/hugo-pages.yml입니다. 저장소의 Settings → Pages → Source는 GitHub Actions로 설정합니다.
+
+## 출처와 직접 수행한 작업
+
+- 테마: [Hugoplate](https://github.com/zeon-studio/hugoplate)
+- 테마 제작자: [Zeon Studio](https://zeon.studio/)
+- 초기 준비: 교수님이 제공한 prepare_github_pages.py 사용
+- 직접 수정: 홈과 소개, 활동 글, 메뉴, 링크, 한국어 설정
+- 직접 추가한 이미지: 사이트 홈 화면을 캡처한 portfolio-home.png
+
+테마의 기존 코드와 이미지를 모두 직접 제작한 것은 아닙니다. 원본 라이선스와 제작자 출처는 유지합니다.
+
+설정 수정과 오류 해결 과정에서 AI의 도움을 받았으며, 변경 내용을 확인하고 공개 사이트에서 동작을 점검했습니다.
+
+---
+
+## 원본 테마 안내
+
+아래는 원본 Hugoplate README입니다. 원본 설치 방법은 현재 과제의 site 폴더와 교수님 제공 스크립트 방식과 다를 수 있습니다.
+
 <h1 align="center">Hugo + Tailwind CSS Starter and Boilerplate</h1>
 
 <p align="center">Hugoplate is a free starter template built with Hugo and Tailwind CSS v4.0, providing everything you need to jumpstart your Hugo project and save valuable time.</p>
