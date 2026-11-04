@@ -1,23 +1,61 @@
 ---
-title: "How to build an Application with modern Technology"
-meta_title: ""
-description: "this is meta description"
-date: 2022-04-04T05:00:00Z
-image: "/images/image-placeholder.png"
-categories: ["Technology", "Data"]
-author: "Sam Wilson"
-tags: ["technology", "tailwind"]
-draft: true
+title: "Vue 영화 프로젝트를 GitHub Pages에 배포하기"
+meta_title: "Vue 프로젝트 배포 실습"
+description: "강의자료의 Vue 영화 프로젝트를 두 가지 방식으로 GitHub Pages에 배포한 실습 기록입니다."
+date: 2026-10-14
+image: ""
+categories: ["수업 실습"]
+author: "eornjs4192"
+tags: ["Vue", "GitHub Pages", "GitHub Actions", "TMDB"]
+draft: false
 ---
 
-Nemo vel ad consectetur namut rutrum ex, venenatis sollicitudin urna. Aliquam erat volutpat. Integer eu ipsum sem. Ut bibendum lacus vestibulum maximus suscipit. Quisque vitae nibh iaculis neque blandit euismod.
+## 활동 소개
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo vel ad consectetur ut aperiam. Itaque eligendi natus aperiam? Excepturi repellendus consequatur quibusdam optio expedita praesentium est adipisci dolorem ut eius!
+수업의 'Vue의 배포' 실습에서 강의자료의 TMDB 영화 프로젝트를 바탕으로 GitHub Pages 배포를 진행했습니다.
 
-## Creative Design
+직접 처음부터 영화 서비스를 개발한 활동이 아니라, 제공된 프로젝트를 이용해 웹사이트를 빌드하고 공개하는 과정을 실습한 활동입니다.
 
-Nam ut rutrum ex, venenatis sollicitudin urna. Aliquam erat volutpat. Integer eu ipsum sem. Ut bibendum lacus vestibulum maximus suscipit. Quisque vitae nibh iaculis neque blandit euismod.
+## 실습 목표
 
-> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo vel ad consectetur ut aperiam. Itaque eligendi natus aperiam? Excepturi repellendus consequatur quibusdam optio expedita praesentium est adipisci dolorem ut eius!
+Vue 프로젝트를 개발 환경에서 실행하는 것과 빌드 결과를 공개 사이트에 배포하는 과정의 차이를 알아보는 것이 목표였습니다.
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo vel ad consectetur ut aperiam. Itaque eligendi natus aperiam? Excepturi repellendus consequatur quibusdam optio expedita praesentium est adipisci dolorem ut eius!
+또한 빌드 결과물을 배포하는 방식과 GitHub Actions를 이용하는 방식의 차이를 확인하고자 했습니다.
+
+## 진행한 내용
+
+### 빌드 결과물 배포
+
+npm run build로 생성한 결과물을 GitHub Pages에 배포하는 방식을 실습했습니다.
+
+[첫 번째 배포 사이트 열기](https://eornjs4192.github.io/movie-lab/)
+
+### GitHub Actions를 이용한 배포
+
+Vue 프로젝트를 저장소에 올리고 GitHub Actions를 이용해 배포하는 방식을 실습했습니다.
+
+[두 번째 배포 사이트 열기](https://eornjs4192.github.io/movie-lab-second/)
+
+## 현재 확인한 결과
+
+과제는 제출 완료 상태이며, 포트폴리오를 작성하면서 배포 사이트에 다시 접속해 보았습니다.
+
+확인한 화면에는 TMDB API 키 입력창과 Connect 버튼이 표시됐습니다. 영화 데이터를 불러오려면 사용자가 자신의 API 키를 입력해야 하는 구조였습니다.
+
+현재는 API 키를 확인하지 못해 영화 목록 조회와 검색 기능을 재검증하지 못했습니다. 따라서 초기 화면 표시와 영화 데이터 조회 결과는 구분해서 기록했습니다.
+
+## 배운 점
+
+웹사이트의 주소가 열린다는 것과 데이터를 사용하는 기능이 정상적으로 작동한다는 것은 따로 확인해야 한다는 점을 알게 됐습니다.
+
+또한 같은 프로젝트라도 빌드 결과물을 올리는 방식과 자동화된 작업으로 배포하는 방식을 사용할 수 있다는 것을 배웠습니다.
+
+## 앞으로 확인할 내용
+
+- 두 배포 방식의 설정과 작업 흐름 비교
+- TMDB API 키를 준비한 뒤 영화 목록과 검색 기능 재검증
+- API 키가 없거나 잘못 입력됐을 때 안내가 적절하게 표시되는지 확인
+
+## 자료 출처와 수행 범위
+
+프로젝트의 기본 코드는 수업 강의자료를 바탕으로 했습니다. 이 활동에서는 제공된 프로젝트의 배포 과정을 실습했습니다.
