@@ -3,7 +3,7 @@ title: "Hugo로 개인 포트폴리오 사이트 만들기"
 meta_title: "개인 포트폴리오 사이트 제작 기록"
 description: "Hugoplate 테마로 사이트를 배포하고, 홈과 소개 페이지의 Markdown 오류를 해결한 과정입니다."
 date: 2026-11-04T14:38:00+09:00
-image: "/images/image-placeholder.png"
+image: "/images/portfolio-home.png"
 categories: ["프로젝트"]
 author: "eornjs4192"
 tags: ["Hugo", "GitHub Pages", "Git", "Markdown"]
