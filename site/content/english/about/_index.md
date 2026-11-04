@@ -6,7 +6,7 @@ meta_title: "소개"
 
 description: "전북대학교 컴퓨터인공지능학부 학생의 관심 분야와 학습 목표를 소개합니다."
 
-image: "/images/image-placeholder.png"
+image: ""
 
 layout: "about"
 
