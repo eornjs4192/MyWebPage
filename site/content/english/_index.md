@@ -1,4 +1,5 @@
 ---
+meta_image: "images/portfolio-home.png"
 # Banner
 banner:
   title: "전북대학교 컴퓨터인공지능학부에 다니는 학생입니다"
