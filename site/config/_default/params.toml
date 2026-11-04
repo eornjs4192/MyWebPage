@@ -78,7 +78,7 @@ keywords = ["포트폴리오", "AI활용", "컴퓨터공학", "학습 기록"]
 description = "전북대학교 컴퓨터인공지능학부 학생의 AI관심 분야와 학습 및 프로젝트 기록을 소개하는 개인 포트폴리오입니다."
 author = "eornjs4192"
 twitter = ""
-image = "images/og-image.png"
+image = "images/portfolio-home.png"
 
 
 # site verifications
