@@ -3,7 +3,7 @@ title: "Vue 영화 프로젝트를 GitHub Pages에 배포하기"
 meta_title: "Vue 프로젝트 배포 실습"
 description: "강의자료의 Vue 영화 프로젝트를 두 가지 방식으로 GitHub Pages에 배포한 실습 기록입니다."
 date: 2026-10-14
-image: ""
+image: "/images/vue-deploy.png"
 categories: ["수업 실습"]
 author: "eornjs4192"
 tags: ["Vue", "GitHub Pages", "GitHub Actions", "TMDB"]
