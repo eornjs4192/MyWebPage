@@ -1,23 +1,59 @@
 ---
-title: "How to build an Application with modern Technology"
-meta_title: ""
-description: "this is meta description"
-date: 2022-04-04T05:00:00Z
+title: "Hugo로 개인 포트폴리오 사이트 만들기"
+meta_title: "개인 포트폴리오 사이트 제작 기록"
+description: "Hugoplate 테마로 사이트를 배포하고, 홈과 소개 페이지의 Markdown 오류를 해결한 과정입니다."
+date: 2026-11-04T14:38:00+09:00
 image: "/images/image-placeholder.png"
-categories: ["Application", "Data"]
-author: "John Doe"
-tags: ["nextjs", "tailwind"]
+categories: ["프로젝트"]
+author: "eornjs4192"
+tags: ["Hugo", "GitHub Pages", "Git", "Markdown"]
 draft: false
 ---
 
-Nemo vel ad consectetur namut rutrum ex, venenatis sollicitudin urna. Aliquam erat volutpat. Integer eu ipsum sem. Ut bibendum lacus vestibulum maximus suscipit. Quisque vitae nibh iaculis neque blandit euismod.
+## 활동 소개
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo vel ad consectetur ut aperiam. Itaque eligendi natus aperiam? Excepturi repellendus consequatur quibusdam optio expedita praesentium est adipisci dolorem ut eius!
+초급프로젝트 수업 과제로 Hugo의 Hugoplate 테마를 이용해 개인 포트폴리오 사이트를 만들고 있습니다.
 
-## Creative Design
+교수님이 제공한 안내와 준비 스크립트를 바탕으로 초기 설정을 진행했고, GitHub Actions와 GitHub Pages를 이용해 사이트를 배포했습니다.
 
-Nam ut rutrum ex, venenatis sollicitudin urna. Aliquam erat volutpat. Integer eu ipsum sem. Ut bibendum lacus vestibulum maximus suscipit. Quisque vitae nibh iaculis neque blandit euismod.
+## 사용한 도구
 
-> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo vel ad consectetur ut aperiam. Itaque eligendi natus aperiam? Excepturi repellendus consequatur quibusdam optio expedita praesentium est adipisci dolorem ut eius!
+- Hugo와 Hugoplate 테마
+- Git과 GitHub
+- GitHub Actions와 GitHub Pages
+- Windows의 Git Bash와 메모장
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo vel ad consectetur ut aperiam. Itaque eligendi natus aperiam? Excepturi repellendus consequatur quibusdam optio expedita praesentium est adipisci dolorem ut eius!
+## 직접 수정한 내용
+
+처음 배포했을 때는 테마의 영어 예시 내용이 표시됐습니다. 이를 제 소개에 맞게 바꾸기 위해 다음 작업을 진행했습니다.
+
+- 홈 화면의 제목과 소개를 한글로 수정했습니다.
+- GitHub 버튼을 제 계정으로 연결했습니다.
+- 이미지 로고를 '나의 포트폴리오'라는 글자로 바꿨습니다.
+- 테마 홍보 배너를 숨겼습니다.
+- 상단 메뉴를 홈, 소개, 활동 기록으로 정리했습니다.
+- 소개 페이지에 AI에 대한 관심과 현재 수강 과목, 학습 계획을 작성했습니다.
+
+## 발생한 문제
+
+홈과 소개 파일을 수정한 뒤 배포는 성공했지만, 수정한 내용이 화면에 제대로 나오지 않는 문제가 있었습니다.
+
+처음에는 새로고침 문제인지 확인했습니다. 이후 Git Bash에서 파일 내용을 출력해 보니 구분선과 Markdown 기호 앞에 불필요한 역슬래시가 들어가 있었습니다. 홈 파일에는 들여쓰기와 목록 기호가 바뀐 부분도 있었습니다.
+
+## 해결 과정
+
+메모장에서 Markdown 구문을 확인할 수 있는 모드로 전환했습니다. 이후 실제 저장된 문자를 확인하면서 잘못된 구분선, 들여쓰기, 목록 기호를 수정했습니다.
+
+소개 파일에서는 불필요한 역슬래시를 제거했습니다. 수정 후에는 Git Bash에서 파일 내용을 다시 확인하고, 커밋과 push를 진행했습니다.
+
+GitHub Actions의 build와 deploy가 모두 성공한 뒤 공개 사이트를 열어 홈과 소개 내용이 정상적으로 표시되는 것을 확인했습니다.
+
+## 배운 점
+
+배포가 성공했다고 해서 화면까지 의도대로 표시되는 것은 아니라는 점을 배웠습니다. 실제 사이트에서 결과를 확인하는 과정이 필요했습니다.
+
+또한 Markdown 파일은 편집기에 보이는 모습뿐 아니라 실제 저장된 기호와 공백도 중요하다는 것을 알게 됐습니다.
+
+## 앞으로 할 일
+
+남아 있는 예시 내용을 정리하고 실제 활동 기록을 추가할 계획입니다. 이후에는 모바일 화면과 메뉴, 링크가 정상적으로 동작하는지도 확인하려고 합니다.
