@@ -24,8 +24,3 @@ weight = 1
 name = "활동 기록"
 url = "/blog"
 weight = 2
-
-[[footer]]
-name = "개인정보 처리방침"
-url = "/privacy-policy"
-weight = 3
