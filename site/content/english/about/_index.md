@@ -1,20 +1,90 @@
----
-title: "Hey, I am John Doe!"
-meta_title: "About"
-description: "this is meta description"
+\---
+
+title: "안녕하세요, 컴퓨터공학을 배우는 학생입니다."
+
+meta\_title: "소개"
+
+description: "전북대학교 컴퓨터인공지능학부 학생의 관심 분야와 학습 목표를 소개합니다."
+
 image: "/images/image-placeholder.png"
+
 layout: "about"
+
 draft: false
----
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis illum nesciunt commodi vel nisi ut alias excepturi ipsum, totam, labore tempora, odit ex iste tempore sed. Fugit voluptatibus perspiciatis assumenda nulla ad nihil, omnis vel, doloremque sit quam autem optio maiores, illum eius facilis et quo consectetur provident dolor similique! Enim voluptatem dicta expedita veritatis repellat dolorum impedit, provident quasi at.
+\---
 
-### This is a title
 
-* Lorem ipsum, dolor sit amet
-* Enim voluptatem dicta expedita veritatis
-* Fugit voluptatibus perspiciatis assumenda
-* Enim voluptatem dicta expedita
-* Corporis illum nesciunt commodi vel
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis illum nesciunt commodi vel nisi ut alias excepturi ipsum, totam, labore tempora, odit ex iste tempore sed. Fugit voluptatibus perspiciatis assumenda nulla ad nihil, omnis vel, doloremque sit quam autem optio maiores, illum eius facilis et quo consectetur provident dolor similique! Enim voluptatem dicta expedita veritatis repellat dolorum impedit, provident quasi at. Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis illum nesciunt commodi vel nisi ut alias excepturi ipsum, totam, labore tempora, odit ex iste tempore sed. Fugit voluptatibus perspiciatis assumenda nulla ad nihil, omnis vel, doloremque sit quam autem optio maiores, illum eius facilis et quo consectetur provident dolor similique! Enim voluptatem dicta expedita veritatis repellat dolorum impedit, provident quasi at.
+전북대학교 컴퓨터인공지능학부에 재학 중인 2학년 학생입니다. 수업에서 배운 내용을 코드로 작성하고 실행하면서 이해하려고 노력하고 있습니다.
+
+
+
+이 사이트에는 공부한 내용과 실습 과정, 프로젝트 경험을 기록하려고 합니다.
+
+
+
+\## 관심 분야
+
+
+
+AI를 다양한 분야에서 어떻게 활용할 수 있는지에 관심이 있습니다. 특히 AI가 실제 서비스나 일상 속 문제를 해결하는 데 어떻게 쓰이는지 알아보는 것을 좋아합니다.
+
+앞으로 여러 AI 도구를 직접 사용해 보면서, 어떤 작업에 도움이 되고 어떤 한계가 있는지도 알아보고 싶습니다.
+
+
+
+\## 현재 배우고 있는 내용
+
+
+
+\- 컴퓨터구조: 컴퓨터의 구성 요소와 프로그램이 실행되는 원리
+
+\- 알고리즘: 문제를 해결하는 방법과 알고리즘의 효율성
+
+\- 리눅스프로그래밍: 리눅스 환경에서의 프로그램 작성과 실행
+
+\- Git과 GitHub를 활용한 버전 관리 및 웹사이트 배포
+
+
+
+\## 학습 목표와 실천 계획
+
+
+
+예제 코드를 따라 작성하는 데서 그치지 않고, 코드가 동작하는 이유를 이해하고 설명할 수 있는 것이 목표입니다. 또한 수업에서 배우는 개념이 실제 개발 현장에서는 어떻게 활용되는지도 알아보려고 합니다.
+
+
+
+\- 예제 코드를 실행하고, 입력이나 조건을 바꾸면서 결과가 달라지는 이유를 확인하겠습니다.
+
+\- 수업 실습 후 핵심 개념을 제 말로 정리하겠습니다.
+
+\- 오류가 발생하면 오류 메시지와 해결 과정을 기록하겠습니다.
+
+\- 배운 개념이 실제 프로그램이나 서비스에 사용되는 사례를 찾아보겠습니다.
+
+\- 프로젝트를 수정할 때 작업 내용을 확인하고 의미 있는 단위로 커밋하겠습니다.
+
+
+
+\## 이 사이트를 만든 과정
+
+
+
+초급프로젝트 수업 과제로 Hugo의 Hugoplate 테마를 사용해 개인 포트폴리오 사이트를 만들고 있습니다.
+
+
+
+GitHub Actions와 GitHub Pages를 이용해 사이트를 배포했고, 테마의 예시 내용을 제 소개와 활동 기록으로 수정하고 있습니다.
+
+
+
+\## GitHub
+
+
+
+코드와 프로젝트 기록은 \[제 GitHub 계정](https://github.com/eornjs4192)에서 확인할 수 있습니다.
+
+
+
