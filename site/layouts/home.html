@@ -1,0 +1,123 @@
+{{ define "main" }}
+<style>
+.pf-home {
+  background: #0b1120;
+  color: #cbd5e1;
+  padding: 72px 24px;
+  font-family: system-ui, sans-serif;
+}
+.pf-home * { box-sizing: border-box; }
+.pf-wrap { max-width: 1100px; margin: auto; }
+.pf-home h1, .pf-home h2, .pf-home h3 { color: #f8fafc; }
+.pf-home h1 {
+  font-size: clamp(32px, 5vw, 60px);
+  line-height: 1.4;
+  margin: 20px 0;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+.pf-home p { line-height: 1.9; }
+.pf-home .pf-accent { color: #67e8f9; }
+.pf-label { color: #67e8f9; font-size: 14px; letter-spacing: .08em; }
+.pf-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+.pf-button {
+  display: inline-block;
+  padding: 13px 22px;
+  border: 1px solid #67e8f9;
+  border-radius: 10px;
+  color: #67e8f9;
+  text-decoration: none;
+}
+.pf-button.pf-primary { background: #67e8f9; color: #0b1120; }
+.pf-home a:focus-visible { outline: 3px solid #fbbf24; outline-offset: 5px; }
+.pf-home a:hover { text-decoration: underline; }
+.pf-section { margin-top: 64px; }
+.pf-home h2 { font-size: 28px; margin-bottom: 20px; }
+.pf-home h3 { font-size: 21px; margin-bottom: 12px; }
+.pf-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 18px; }
+.pf-projects { grid-template-columns: repeat(2,minmax(0,1fr)); }
+.pf-card {
+  min-width: 0;
+  background: #131e32;
+  border: 1px solid #334155;
+  border-radius: 16px;
+  padding: 26px;
+  overflow-wrap: anywhere;
+}
+.pf-card a { color: #67e8f9; text-decoration: underline; }
+@media(max-width:767px) {
+  .pf-home { padding: 48px 20px; }
+  .pf-grid { grid-template-columns: minmax(0,1fr); }
+}
+</style>
+<div class="pf-home">
+  <div class="pf-wrap">
+    <section aria-labelledby="pf-title">
+      <p class="pf-label">EORNJS4192 / STUDENT PORTFOLIO</p>
+      <h1 id="pf-title">
+        AI를 어떻게 활용할지<br>
+        <span class="pf-accent">고민하고 배우는</span><br>
+        컴퓨터공학 학생입니다.
+      </h1>
+      <p>
+        전북대학교 컴퓨터인공지능학부 2학년입니다.<br>
+        배운 원리를 이해하고 실제 개발에서 어떻게 쓰이는지 찾아봅니다.<br>
+        이곳에 직접 해 본 프로젝트와 문제 해결 과정을 기록합니다.
+      </p>
+      <div class="pf-actions">
+        <a class="pf-button pf-primary" href="{{ "blog/" | relLangURL }}">활동 기록 보기</a>
+        <a class="pf-button" href="https://github.com/eornjs4192">GitHub 방문하기</a>
+      </div>
+    </section>
+
+    <section class="pf-section" aria-labelledby="pf-learning">
+      <p class="pf-label">CURRENTLY LEARNING</p>
+      <h2 id="pf-learning">기초부터, 직접 이해하기</h2>
+      <div class="pf-grid">
+        <div class="pf-card">
+          <h3>컴퓨터구조</h3>
+          <p>컴퓨터의 구성 요소와 프로그램이 실행되는 원리를 배우고 있습니다.</p>
+        </div>
+        <div class="pf-card">
+          <h3>알고리즘</h3>
+          <p>문제를 해결하는 다양한 방법과 알고리즘의 효율성을 공부합니다.</p>
+        </div>
+        <div class="pf-card">
+          <h3>리눅스프로그래밍</h3>
+          <p>리눅스 환경에서 프로그램을 작성하고 컴파일하며 실행해 봅니다.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="pf-section" aria-labelledby="pf-projects">
+      <p class="pf-label">PROJECT LOG</p>
+      <h2 id="pf-projects">직접 해 본 활동</h2>
+      <div class="pf-grid pf-projects">
+        <article class="pf-card">
+          <p class="pf-label">HUGO · GITHUB PAGES</p>
+          <h3>개인 포트폴리오 사이트</h3>
+          <p>테마를 바탕으로 소개와 활동 기록을 작성하고, 배포와 Markdown 오류 해결 과정을 경험했습니다.</p>
+          <a href="{{ "blog/post-1/" | relLangURL }}">사이트 제작 과정 보기 →</a>
+        </article>
+        <article class="pf-card">
+          <p class="pf-label">VUE · GITHUB ACTIONS</p>
+          <h3>Vue 영화 프로젝트 배포</h3>
+          <p>강의자료의 프로젝트를 두 가지 방식으로 배포하고, 빌드 결과물 배포와 자동 배포의 차이를 정리했습니다.</p>
+          <a href="{{ "blog/post-2/" | relLangURL }}">Vue 배포 실습 보기 →</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="pf-section" aria-labelledby="pf-interest">
+      <h2 id="pf-interest">AI를 도구로, 결과는 직접 확인하며</h2>
+      <p>
+        여러 AI 도구의 활용 방법과 한계에 관심이 있습니다.
+        도움을 받은 결과도 직접 실행하고 확인하는 습관을 기르려고 합니다.
+      </p>
+      <div class="pf-actions">
+        <a class="pf-button" href="{{ "about/" | relLangURL }}">관심 분야와 학습 계획 보기</a>
+      </div>
+    </section>
+  </div>
+</div>
+{{ end }}
