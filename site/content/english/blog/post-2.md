@@ -63,3 +63,10 @@ Vue 프로젝트를 저장소에 올리고 GitHub Actions를 이용해 배포하
 ## 자료 출처와 수행 범위
 
 프로젝트의 기본 코드는 수업 강의자료를 바탕으로 했습니다. 이 활동에서는 제공된 프로젝트의 배포 과정을 실습했습니다.
+
+## 실습 저장소
+
+각 배포 방식에 사용한 파일과 설정은 아래 저장소에서 확인할 수 있습니다.
+
+- [첫 번째 배포 실습 저장소](https://github.com/eornjs4192/movie-lab)
+- [GitHub Actions 배포 실습 저장소](https://github.com/eornjs4192/movie-lab-second)
