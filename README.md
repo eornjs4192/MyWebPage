@@ -51,22 +51,71 @@ Markdown은 원문을 볼 수 있는 모드에서 편집하고, 구분선과 들
 
 ## 빌드 환경과 방법
 
-현재 GitHub Actions에 설정된 버전입니다.
+### 검증된 자동 빌드 환경
 
-- Python 3.12
-- Node.js 24
-- Go 1.27.1
-- Hugo Extended 0.165.0
-- Dart Sass 1.105.0
+GitHub Actions의 ubuntu-latest 환경에서 다음 도구를 준비해 빌드합니다.
 
-자동 배포에서는 저장소 최상위에서 다음 명령을 실행합니다.
+| 도구 | 워크플로 설정 버전 | 설치 방법 |
+|---|---|---|
+| Python | 3.12 | actions/setup-python |
+| Node.js | 24 | actions/setup-node |
+| Go | 1.27.1 | actions/setup-go |
+| Hugo Extended | 0.165.0 | 공식 릴리스 압축 파일 다운로드 및 PATH 등록 |
+| Dart Sass | 1.105.0 | 공식 릴리스 압축 파일 다운로드 및 PATH 등록 |
+
+정확한 설치 명령은 [.github/workflows/hugo-pages.yml](.github/workflows/hugo-pages.yml)에 기록되어 있습니다.
+
+### 개인 컴퓨터에서 준비할 도구
+
+로컬 빌드를 시도하려면 위 도구가 필요합니다. 각 운영체제에 맞는 설치 파일을 사용하고, 설치 후 터미널을 다시 열어 명령어가 실행되는지 확인합니다.
+
+- [Python 설치 안내](https://www.python.org/downloads/)
+- [Node.js 설치 안내](https://nodejs.org/en/download)
+- [Go 설치 안내](https://go.dev/doc/install)
+- [Hugo 설치 안내](https://gohugo.io/installation/) — Extended 버전 사용
+- [Dart Sass 설치 안내](https://sass-lang.com/install/) — 독립 실행형 배포본 사용
+
+설치 확인 명령은 다음과 같습니다.
+
+```bash
+python --version
+node --version
+go version
+hugo version
+sass --version
+```
+
+자동 빌드에서 사용한 버전은 위 표를 기준으로 합니다. 다른 버전과 Windows 로컬 환경에서의 실행은 아직 검증하지 않았습니다.
+
+### 의존성 준비와 빌드
+
+명령어는 site 폴더 안이 아니라, README.md와 .github 폴더가 있는 저장소 최상위에서 실행합니다.
 
 ```bash
 python .github/pages_build.py --dependencies
 python .github/pages_build.py --build
 ```
 
-빌드 결과는 최상위 public 폴더에 생성됩니다. Windows 로컬에서 같은 명령을 실행하려면 필요한 도구가 설치되어 있어야 하며, 로컬 실행은 아직 검증하지 않았습니다.
+첫 번째 명령은 site와 site/themes/template의 npm 의존성을 준비합니다. 필요한 CLI 도구가 없으면 별도 .pages-tools 폴더에도 설치합니다. 이 과정에는 인터넷 연결이 필요합니다.
+
+두 번째 명령은 Hugo로 사이트를 빌드하고 GitHub Pages의 프로젝트 주소에 맞게 경로를 보정합니다.
+
+빌드 결과는 저장소 최상위 public 폴더에 생성됩니다. public/index.html이 없으면 빌드 스크립트가 오류로 처리합니다.
+
+### 결과 확인과 검증 범위
+
+GitHub Actions에서 위 설치와 빌드 과정, Pages 배포가 성공한 것을 확인했습니다. 공개 사이트에서는 페이지와 링크, 이미지 표시를 직접 점검했습니다.
+
+Windows 로컬 빌드는 아직 검증하지 않았으므로, 자동 빌드 성공을 Windows 실행 성공으로 간주하지 않습니다.
+
+로컬 빌드 결과를 간단히 확인하려면 저장소 최상위에서 다음 명령으로 파일 생성 여부를 확인할 수 있습니다.
+
+```bash
+python -c "from pathlib import Path; p=Path('public/index.html'); print('홈 파일 생성:', p.is_file())"
+```
+
+파일 존재 확인만으로 링크와 화면의 정상 동작까지 검증되는 것은 아닙니다. 최종 동작은 배포된 사이트에서 별도로 확인합니다.
+
 
 ## 문제 발생 시 확인 순서
 
