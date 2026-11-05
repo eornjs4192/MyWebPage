@@ -88,3 +88,7 @@ GitHub Actions와 GitHub Pages를 이용해 사이트를 배포했고, 테마의
 
 
 
+
+## 연락 경로
+
+GitHub 계정과 이 사이트의 저장소는 [연락처 페이지]({{< relref "/contact" >}})에서 확인할 수 있습니다.
