@@ -29,3 +29,8 @@ weight = 2
 name = "연락처"
 url = "/contact"
 weight = 4
+
+[[footer]]
+name = "연락처"
+url = "/contact"
+weight = 3
