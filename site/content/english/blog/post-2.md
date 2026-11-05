@@ -70,3 +70,7 @@ Vue 프로젝트를 저장소에 올리고 GitHub Actions를 이용해 배포하
 
 - [첫 번째 배포 실습 저장소](https://github.com/eornjs4192/movie-lab)
 - [GitHub Actions 배포 실습 저장소](https://github.com/eornjs4192/movie-lab-second)
+
+---
+
+[활동 기록 목록으로 돌아가기]({{< relref "/blog" >}})
