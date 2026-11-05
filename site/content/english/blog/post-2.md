@@ -83,4 +83,8 @@ Vue 프로젝트를 저장소에 올리고 GitHub Actions를 이용해 배포하
 
 ---
 
+## 함께 볼 활동
+
+[Hugo로 개인 포트폴리오 사이트 만들기]({{< relref "/blog/post-1.md" >}})에서는 GitHub Actions 배포와 Markdown 오류 해결 과정을 정리했습니다.
+
 [활동 기록 목록으로 돌아가기]({{< relref "/blog" >}})
