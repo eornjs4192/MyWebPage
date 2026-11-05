@@ -1,23 +1,89 @@
 {{ define "main" }}
-  <section class="section-sm">
-    <div class="container">
-      <div class="row justify-center">
-        <div class="md:col-10 lg:col-8">
+<style>
+  .about-profile {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    margin-bottom: 44px;
+  }
+  .about-photo {
+    flex: 0 0 180px;
+    width: 180px;
+    height: 180px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 3px solid #67e8f9;
+    background: #131e32;
+  }
+  .about-photo picture {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .about-photo img {
+    display: block;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover;
+    object-position: center;
+  }
+  .about-profile-text {
+    flex: 1;
+    min-width: 0;
+    overflow-wrap: anywhere;
+  }
+  .about-profile-text h1 {
+    margin: 0 0 16px;
+    font-size: clamp(26px, 4vw, 36px);
+    line-height: 1.4;
+    word-break: keep-all;
+  }
+  .about-profile-text p {
+    margin: 0;
+    color: #cbd5e1;
+    line-height: 1.9;
+  }
+  @media (max-width: 640px) {
+    .about-profile {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 24px;
+    }
+    .about-photo {
+      flex: 0 0 150px;
+      width: 150px;
+      height: 150px;
+    }
+  }
+</style>
+
+<section class="section-sm">
+  <div class="container">
+    <div class="row justify-center">
+      <div class="md:col-10 lg:col-8">
+        <div class="about-profile">
           {{ with .Params.image }}
-            <div style="max-width: 240px; margin: 0 auto 32px;">
+            <div class="about-photo">
               {{ partial "image" (dict
                 "Src" .
                 "Context" $.Page
                 "Alt" "조대권 프로필 사진"
-                "Class" "mx-auto rounded"
                 "Loading" "eager"
               ) }}
             </div>
           {{ end }}
-          <h1 class="h3 mb-6">{{ .Title }}</h1>
-          <div class="content">{{ .Content }}</div>
+          <div class="about-profile-text">
+            <h1>{{ .Title }}</h1>
+            <p>
+              전북대학교 컴퓨터인공지능학부에 재학 중입니다.
+              AI의 활용 방법에 관심을 갖고, 배운 원리가 실제 개발에서
+              어떻게 쓰이는지 탐구하며 공부하고 있습니다.
+            </p>
+          </div>
         </div>
+        <div class="content">{{ .Content }}</div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 {{ end }}
