@@ -1,0 +1,23 @@
+{{ define "main" }}
+  <section class="section-sm">
+    <div class="container">
+      <div class="row justify-center">
+        <div class="md:col-10 lg:col-8">
+          {{ with .Params.image }}
+            <div style="max-width: 240px; margin: 0 auto 32px;">
+              {{ partial "image" (dict
+                "Src" .
+                "Context" $.Page
+                "Alt" "조대권 프로필 사진"
+                "Class" "mx-auto rounded"
+                "Loading" "eager"
+              ) }}
+            </div>
+          {{ end }}
+          <h1 class="h3 mb-6">{{ .Title }}</h1>
+          <div class="content">{{ .Content }}</div>
+        </div>
+      </div>
+    </div>
+  </section>
+{{ end }}

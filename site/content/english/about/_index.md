@@ -1,12 +1,12 @@
 ---
 
-title: "안녕하세요, 컴퓨터공학을 배우는 학생입니다."
+title: "안녕하세요, 조대권입니다."
 
 meta_title: "소개"
 
 description: "전북대학교 컴퓨터인공지능학부 학생의 관심 분야와 학습 목표를 소개합니다."
 
-image: ""
+image: "/images/profile.png"
 
 layout: "about"
 
